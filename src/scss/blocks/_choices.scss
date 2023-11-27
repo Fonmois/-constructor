@@ -1,0 +1,51 @@
+.choices {
+    color: $green;
+    width: 282px;
+
+    &__item {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &.is-open[data-type*=select-one]:after {
+        transform: rotate(180deg);
+    }
+
+    &[data-type*=select-one]:after {
+
+        position: absolute !important;
+        left: 90%;
+        height: 8px !important;
+        width: 16px !important;
+        border-width: 0px;
+        border: none !important;
+        background-size: 15px 8px;
+        background-repeat: no-repeat;
+        background-image: url('data:image/svg+xml, %3Csvg%20width%3D%2216%22%20height%3D%229%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M7.3%208.7a1%201%200%200%200%201.4%200l6.37-6.36A1%201%200%200%200%2013.66.93L8%206.59%202.34.93A1%201%200%200%200%20.93%202.34l6.36%206.37ZM7%207v1h2V7H7Z%22%20fill%3D%22%2300AC07%22%2F%3E%3C%2Fsvg%3E') !important;
+    }
+
+    &__inner {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        background-color: #fff;
+        padding: 7.5px 7.5px 3.75px;
+        border: 2px solid $green;
+        border-radius: 3px;
+        font-size: 14px;
+        min-height: 44px;
+        overflow: hidden;
+    }
+    
+    &[data-type*=select-one]::after {
+    border-color: $green transparent transparent transparent;
+}
+}
+
+// .choices__list .choices__list--dropdown, .is-open .choices__list[aria-expanded] {
+//     border-color: $green;
+//     transform: rotate(180deg);
+// }

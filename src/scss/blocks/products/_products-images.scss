@@ -1,0 +1,42 @@
+.products-images {
+    width: 486px;
+    height: 518px;
+    margin: auto;
+    position: relative;
+    flex-shrink: 0;
+
+    &__picture {
+        position: absolute;
+        opacity: 0.3;
+        transition: 1s;
+
+        &:last-child {
+            opacity: 1;
+        }
+
+        &.checked {
+            opacity: 1;
+        }
+
+        &_pos1 {
+            transform: translate(367px, 128%);
+
+        }
+
+        &_pos2 {
+            transform: translate(-3%, 161%);
+        }
+
+        &_pos3 {
+            transform: translate(77%, 372px);
+        }
+
+        &_pos4 {
+            transform: translate(60%, 263%);
+        }
+
+        &_pos5 {
+            transform: translate(31%, -4.5%);
+        }
+    }
+}
